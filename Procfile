@@ -1,0 +1,1 @@
+web: tribute-page

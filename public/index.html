@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tribute Page</title>
+    <meta name="description" content="Albert Einstein tribute page">
+    <meta name="viewport" content="width=device-width, 
+      initial-scale=1.0, user-scalable=no">
+
+    <!--Enlaces-->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-startup-image" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<style>
+		html {
+			font-size: 16px;
+		}
+		body {
+			background-color: #eee;
+			margin: 0;
+			padding: 0;
+		}
+
+		div.top-stripe {
+			width: 100%;
+			height: 80px;
+			background-color: #323232;
+			margin-bottom: 10px;
+		}
+
+		div.container {
+			max-width: 95%;
+			width: 95%;
+			background-color: #fff;
+			margin: auto;
+		}
+
+		header {
+			color: #333;
+			font-family: Serif;
+			margin: auto;
+		}
+		h1, h2, h3, hr {
+			margin: 0;
+			padding: 0;
+		}
+		header img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+			display: block;
+			margin: auto;
+		}
+		header .title {
+			box-sizing: border-box;
+			text-align: center;
+			margin: auto;
+			padding: 20px 10px;
+		}
+		header .title h1 {
+			font-size: 2.0rem;
+		}
+		header .title h2 {
+			font-size: 1.6rem;
+			margin-bottom: 10px;
+		}
+		header .title p {
+			background-color: #295f4e;;
+			color: #eee;
+			font-size: 1.2rem;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 0;
+			padding: 5px 0;
+		}
+		div.quote {
+			color: #003366;
+			font-size: 1.2rem;
+			text-align: center;
+			margin: 0 auto;
+			padding: 20px 10px 15px 10px;
+		}
+
+		section {
+			margin-top: 20px;
+			padding: 5px 10%;
+		}
+		section h3 {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.1rem;
+			color: #333;
+			text-align: left;
+		}
+		section a {
+			text-decoration: none;
+			color: #e60000;
+		}
+		section a:hover {
+			font-weight: bold;
+			color: #dc2f2f;
+		}
+		section p {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1rem;
+		}
+		section.last {
+			padding-bottom: 30px;
+		}
+
+		div.footer-stripe {
+			height: 10px;
+			background-color: #eee;
+		}
+
+		footer {
+			line-height: 5rem;
+			background-color: #2e6b58;
+		}
+		footer p {
+			width: 85%;
+			font-size: 0.85rem;
+			font-family: "Helvetica";
+			font-weight: 700;
+			color: #ccc;
+			text-align: right;
+			margin: 0 auto;
+		}
+		footer span {
+			color: #aaa;
+		}
+		footer span.bar {
+			border-right: 4px solid #ccc;
+			padding-left: 10px;
+		}
+
+		/* Media queries */
+		@media screen and (min-width: 600px) {
+			header img {
+				width: 49%;
+				display: initial;
+			}
+			header .title {
+				width: 49%;
+				display: inline-block;
+				padding: 0 50px;
+			}
+			div.quote {
+				padding: 50px 10px 20px 10px;
+			}
+	    }
+
+	    @media screen and (min-width: 768px){
+			div.top-stripe {
+				height: 120px;
+				margin-bottom: 15px;
+			}
+			header .title h1 {
+			font-size: 2.8rem;
+			}
+			header .title h2 {
+				font-size: 1.8rem;
+			}
+			div.quote {
+				font-size: 1.3rem;
+				padding: 60px 10px 30px 10px;
+			}
+			section h3 {
+				font-size: 1.3rem;
+			}
+			section p {
+				font-size: 1.2rem;
+			}
+			div.footer-stripe {
+				height: 15px;
+			}
+			footer {
+				line-height: 6rem;	
+			}
+			footer p {
+				font-size: 1rem;
+			}
+	    }
+
+		@media screen and (min-width: 1200px) {
+			div.top-stripe {
+				height: 150px;
+			}
+			div.container {
+			max-width: 1200px;
+			width: 95%;
+			}
+			header .title h1 {
+			font-size: 3rem;
+			}
+			header .title h2 {
+				font-size: 2rem;
+			}
+			div.quote {
+				font-size: 1.25rem;
+				padding: 70px 10px 40px 10px;
+			}
+			section h3 {
+				font-size: 1.1rem;
+			}
+			section p {
+				font-size: 1.0rem;
+			}
+			section.last {
+				padding-bottom: 70px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top-stripe"></div>
+
+	<div class="container">
+		<header>
+			<img src="img/albert-einstein.jpg" alt="Photo of Albert Einstein">
+			<div class="title">
+				<h1>ALBERT EINSTEIN</h1>
+				<h2>(1879–1955)</h2>
+				<hr>
+				<p>The man and his brain</p>
+			</div>
+		</header>
+
+		<div class="quote">
+			<em><q>Why is it nobody understands me but everybody likes me?</q></em>
+		</div>
+
+		<main>
+			<section>
+				<h3>Who Was Albert Einstein?</h3>
+				<p>Albert Einstein (March 14, 1879 to April 18, 1955) was a German mathematician and theoretical physicist who developed the special and general theories of relativity. In 1921 he won the Nobel Prize for physics for his explanation of the photoelectric effect. In the following decade, he immigrated to the U.S. after being targeted by the Nazis. His work also had a major impact on the development of atomic energy. In his later years, Einstein focused on unified field theory. With his passion for inquiry, Einstein is generally considered the most influential physicist of the 20th century.</p>
+			</section>
+			<section>
+				<h3>Albert Einstein’s Inventions and Discoveries</h3>
+				<p>As a physicist, Einstein had many discoveries, but he is perhaps best known for his theory of relativity and the equation E=MC2, which foreshadowed the development of atomic power and the atomic bomb.</p>
+				<p><a href="https://en.wikipedia.org/wiki/Theory_of_relativity" target="_blank">Theory of Relativity</a>
+					<br>
+				Einstein first proposed a special theory of relativity in 1905 in his paper, “On the Electrodynamics of Moving Bodies,” taking physics in an electrifying new direction. By November 1915, Einstein completed the general theory of relativity. Einstein considered this theory the culmination of his life research. He was convinced of the merits of general relativity because it allowed for a more accurate prediction of planetary orbits around the sun, which fell short in Isaac Newton’s theory, and for a more expansive, nuanced explanation of how gravitational forces worked. Einstein's assertions were affirmed via observations and measurements by British astronomers Sir Frank Dyson and Sir Arthur Eddington during the 1919 solar eclipse, and thus a global science icon was born.</p>
+			</section>
+			<section>
+				<h3>Nobel Prize for Physics</h3>
+				<p>In 1921, Einstein won the Nobel Prize for Physics for his explanation of the photoelectric effect, since his ideas on relativity were still considered questionable. He wasn't actually given the award until the following year due to a bureaucratic ruling, and during his acceptance speech he still opted to speak about relativity.</p>
+				<p>In the development of his general theory, Einstein had held onto the belief that the universe was a fixed, static entity, aka a "cosmological constant," though his later theories directly contradicted this idea and asserted that the universe could be in a state of flux. Astronomer Edwin Hubble deduced that we indeed inhabit an expanding universe, with the two scientists meeting at the Mount Wilson Observatory near Los Angeles in 1930.</p>
+			</section>
+			<section class="last">
+				<h3>Einstein’s Brain</h3>
+				<p>During Albert Einstein’s autopsy, Thomas Stoltz Harvey removed his brain, reportedly without the permission of his family, for preservation and future study by doctors of neuroscience. However during his life Einstein participated in brain studies, and at least one biography says he hoped researchers would study his brain after he died. Einstein's brain is now located at the Princeton University Medical Center, and his remains were cremated and his ashes scattered in an undisclosed location, following his wishes.</p>
+				<p>In 1999, Canadian scientists who were studying Einstein’s brain found that his inferior parietal lobe, the area that processes spatial relationships, 3D-visualization and mathematical thought, was 15 percent wider than in people with normal intelligence. According to The New York Times, the researchers believe it may help explain why Einstein was so intelligent.</p>
+			</section>
+		</main>
+
+		<div class="footer-stripe"></div>
+
+		<footer>
+			<p>Developed by <span>Luis Ayres</span>, january 2018. <span class="bar"></span></p>
+		</footer>
+	</div><!-- .container -->
+</body>
+</html>
