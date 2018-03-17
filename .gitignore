@@ -14,10 +14,10 @@
 *.out
 
 ## Se ignora el archivo ejecutable
-blogapp
+*.exe
 
-## Se ignora la carpeta de GoLand
-.idea/
+## Se ignora el archivo
+desktop.ini
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
